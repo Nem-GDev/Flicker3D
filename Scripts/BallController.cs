@@ -91,9 +91,9 @@ public class BallController : MonoBehaviour
 
     public void DespawnBall(bool scored)
     {
-        if(scored)
+        if (scored)
             mc.BallScored();
-        else    
+        else
             mc.BallFailed();
         Destroy(gameObject);
     }
@@ -103,4 +103,6 @@ public class BallController : MonoBehaviour
         yield return new WaitForSeconds(timer);
         DespawnBall(false);
     }
+
+    // ?ignore - testing github desktop 
 }
